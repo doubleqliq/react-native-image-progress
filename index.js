@@ -144,7 +144,7 @@ class ImageProgress extends Component {
       <Image
         {...props}
         key={source ? source.uri || source : undefined}
-        onLoadStart={this.handleLoadStart}
+        onLayout={this.handleLoadStart}
         onProgress={this.handleProgress}
         onError={this.handleError}
         onLoad={this.handleLoad}
